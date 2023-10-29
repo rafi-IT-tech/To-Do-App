@@ -1,20 +1,10 @@
-// src/App.js
-
-import React from 'react';
-import { Provider } from 'react-redux';
-import store from './store';
-// import TodoList from './components/TodoList';
-// Correct import statement with the right casing
-import TodoList from './components/TodoList';
-
+import FormTodo from "./components/FormTodo";
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <TodoList />
-      </div>
-    </Provider>
+    <div className="max-w-md mx-10 md:mx-auto">
+      <FormTodo />
+    </div>
   );
 }
 
